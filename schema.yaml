@@ -1,0 +1,514 @@
+meta:
+  name: SDG11 Quito Implementation Coding Schema
+  version: 1.0.0
+  description: Keyword-based sub-theme matching for SDG 11 implementation themes derived
+    from the Quito Implementation Plan / New Urban Agenda.
+  match_fields:
+  - Article Title
+  - Abstract
+  - Author Keywords
+  - Keywords Plus
+  match_rule: Case-insensitive OR match within each sub-theme keyword list; a paper
+    is counted for a sub-theme if any keyword/phrase is present in the concatenated
+    fields.
+themes:
+- theme_id: T1
+  theme_name: Integrated Urban Policy and Planning Systems
+  subthemes:
+  - subtheme_id: T1.1
+    subtheme_name: National Urban Policies
+    keywords:
+    - national urban policy
+    - national urban framework
+    - integrated national policies
+    - policy coherence
+    - policy alignment
+    - national development strategies
+    - urban policy coordination
+  - subtheme_id: T1.2
+    subtheme_name: Multi-level governance
+    keywords:
+    - multilevel governance
+    - multi-level governance
+    - national–subnational coordination
+    - national subnational coordination
+    - national–local coordination
+    - national local coordination
+    - intergovernmental coordination
+    - shared responsibilities
+    - subsidiarity
+    - vertical integration
+  - subtheme_id: T1.3
+    subtheme_name: Integrated spatial planning
+    keywords:
+    - integrated spatial planning
+    - integrated planning
+    - land-use planning
+    - land use planning
+    - territorial planning
+    - regional planning
+    - metropolitan planning
+    - functional urban areas
+    - functional urban area
+    - urban–rural linkages
+    - urban rural linkages
+  - subtheme_id: T1.4
+    subtheme_name: Cross-sectoral integration
+    keywords:
+    - cross-sectoral coordination
+    - cross sectoral coordination
+    - cross-sectoral policies
+    - cross sectoral policies
+    - integrated approaches
+    - integrated urban development
+    - whole-of-government
+    - whole of government
+    - policy integration
+  - subtheme_id: T1.5
+    subtheme_name: Legal and regulatory instruments
+    keywords:
+    - planning legislation
+    - zoning regulations
+    - zoning regulation
+    - statutory plans
+    - statutory plan
+    - regulatory frameworks
+    - regulatory framework
+    - development control
+    - planning standards
+    - zoning instruments
+- theme_id: T2A
+  theme_name: Affordable Housing and Tenure
+  subthemes:
+  - subtheme_id: T2A.1
+    subtheme_name: Housing provision and adequacy
+    keywords:
+    - housing provision
+    - adequate housing
+    - housing quality
+    - habitability
+    - overcrowding
+    - residential conditions
+  - subtheme_id: T2A.2
+    subtheme_name: Housing affordability and household finance
+    keywords:
+    - housing affordability
+    - housing cost burden
+    - affordable housing
+    - housing subsidies
+    - low-income housing
+    - low income housing
+    - social housing
+  - subtheme_id: T2A.3
+    subtheme_name: Informal settlements and slum upgrading
+    keywords:
+    - informal settlements
+    - informal settlement
+    - slums
+    - slum upgrading
+    - in-situ upgrading
+    - in situ upgrading
+    - incremental housing
+    - informal housing
+  - subtheme_id: T2A.4
+    subtheme_name: Tenure security and land regularization
+    keywords:
+    - security of tenure
+    - land tenure
+    - land regularization
+    - housing rights
+    - eviction prevention
+    - forced eviction
+- theme_id: T2B
+  theme_name: Urban Services and Networked Infrastructure
+  subthemes:
+  - subtheme_id: T2B.1
+    subtheme_name: Water supply systems
+    keywords:
+    - water supply
+    - drinking water
+    - potable water
+    - water access
+    - piped water
+  - subtheme_id: T2B.2
+    subtheme_name: Sanitation and wastewater systems
+    keywords:
+    - sanitation
+    - sewerage
+    - wastewater treatment
+    - fecal sludge management
+    - on-site sanitation
+    - on site sanitation
+  - subtheme_id: T2B.3
+    subtheme_name: Stormwater and urban drainage
+    keywords:
+    - stormwater
+    - urban drainage
+    - drainage infrastructure
+    - pluvial flooding
+    - surface water management
+  - subtheme_id: T2B.4
+    subtheme_name: Solid waste services
+    keywords:
+    - solid waste
+    - municipal waste
+    - waste collection
+    - waste services
+    - refuse management
+  - subtheme_id: T2B.5
+    subtheme_name: Energy access and distribution
+    keywords:
+    - energy access
+    - electricity access
+    - power distribution
+    - household energy
+    - urban energy services
+    - energy affordability
+  - subtheme_id: T2B.6
+    subtheme_name: Public spaces and urban commons
+    keywords:
+    - public spaces
+    - public open space
+    - urban commons
+    - plazas
+    - streetscapes
+    - sidewalks
+    - pedestrian spaces
+    - parks
+    - recreational spaces
+    - community spaces
+    - green infrastructure
+    - urban green spaces
+- theme_id: T2C
+  theme_name: Urban Mobility and Transport Systems
+  subthemes:
+  - subtheme_id: T2C.1
+    subtheme_name: Public transport systems
+    keywords:
+    - public transport
+    - mass transit
+    - bus rapid transit
+    - metro systems
+    - metro system
+    - rail transit
+  - subtheme_id: T2C.2
+    subtheme_name: Sustainable and low-carbon mobility
+    keywords:
+    - sustainable mobility
+    - low-carbon transport
+    - low carbon transport
+    - active transport
+    - non-motorized transport
+    - non motorized transport
+    - walking
+    - cycling
+  - subtheme_id: T2C.3
+    subtheme_name: Transport infrastructure planning
+    keywords:
+    - transport infrastructure planning
+    - transport planning
+    - mobility planning
+    - road networks
+    - rail networks
+    - transport corridors
+  - subtheme_id: T2C.4
+    subtheme_name: Transit-oriented development and accessibility
+    keywords:
+    - transit-oriented development
+    - transit oriented development
+    - TOD
+    - accessibility
+    - last-mile connectivity
+    - last mile connectivity
+    - station-area development
+    - station area development
+- theme_id: T3
+  theme_name: Equity-Focused Targeting and Inclusion Mechanisms
+  subthemes:
+  - subtheme_id: T3.1
+    subtheme_name: Vulnerable and marginalized populations
+    keywords:
+    - vulnerable populations
+    - marginalized groups
+    - women
+    - children
+    - youth
+    - older persons
+    - persons with disabilities
+    - migrants
+    - indigenous peoples
+  - subtheme_id: T3.2
+    subtheme_name: Spatial targeting of disadvantage
+    keywords:
+    - underserved areas
+    - deprived neighborhoods
+    - informal areas
+    - high-risk settlements
+    - high risk settlements
+    - spatial inequality
+    - spatial inequity
+  - subtheme_id: T3.3
+    subtheme_name: Gender-responsive planning
+    keywords:
+    - gender-responsive planning
+    - gender responsive planning
+    - gender equality
+    - gender equity
+    - women’s safety
+    - women safety
+    - gender-sensitive policies
+    - gender sensitive policies
+  - subtheme_id: T3.4
+    subtheme_name: Inclusive participation and co-production
+    keywords:
+    - inclusive participation
+    - participatory planning
+    - community engagement
+    - civic participation
+    - stakeholder engagement
+    - co-production
+    - co production
+  - subtheme_id: T3.5
+    subtheme_name: Anti-displacement and social inclusion mechanisms
+    keywords:
+    - displacement
+    - gentrification
+    - social inclusion
+    - right to the city
+    - inclusive development
+- theme_id: T4
+  theme_name: Urban Resilience, Climate Adaptation and Risk Governance
+  subthemes:
+  - subtheme_id: T4.1
+    subtheme_name: Disaster risk reduction
+    keywords:
+    - disaster risk reduction
+    - DRR
+    - risk management
+    - disaster preparedness
+    - hazard mitigation
+  - subtheme_id: T4.2
+    subtheme_name: Climate change adaptation
+    keywords:
+    - climate adaptation
+    - climate resilience
+    - climate risks
+    - climate impacts
+    - adaptive capacity
+  - subtheme_id: T4.3
+    subtheme_name: Risk-informed urban planning
+    keywords:
+    - risk-informed planning
+    - risk informed planning
+    - hazard mapping
+    - vulnerability assessment
+    - exposure reduction
+    - risk-sensitive development
+    - risk sensitive development
+  - subtheme_id: T4.4
+    subtheme_name: Nature-based solutions
+    keywords:
+    - nature-based solutions
+    - nature based solutions
+    - ecosystem-based approaches
+    - ecosystem based approaches
+    - ecosystem-based adaptation
+    - ecosystem based adaptation
+    - green infrastructure
+  - subtheme_id: T4.5
+    subtheme_name: Post-disaster recovery and reconstruction
+    keywords:
+    - post-disaster recovery
+    - post disaster recovery
+    - reconstruction
+    - rehabilitation
+    - build back better
+    - recovery planning
+- theme_id: T5
+  theme_name: Environmental Management and Urban Metabolism
+  subthemes:
+  - subtheme_id: T5.1
+    subtheme_name: Air quality and emissions
+    keywords:
+    - air quality
+    - air pollution
+    - PM2.5
+    - PM10
+    - emissions reduction
+    - pollution control
+  - subtheme_id: T5.2
+    subtheme_name: Waste and circular economy
+    keywords:
+    - circular economy
+    - recycling
+    - reuse
+    - resource efficiency
+    - waste minimization
+  - subtheme_id: T5.3
+    subtheme_name: Urban water quality and ecosystems
+    keywords:
+    - water quality
+    - aquatic ecosystems
+    - watershed protection
+    - urban rivers
+  - subtheme_id: T5.4
+    subtheme_name: Energy systems and efficiency
+    keywords:
+    - energy efficiency
+    - renewable energy
+    - clean energy
+    - low-carbon energy
+    - low carbon energy
+    - energy transition
+    - decarbonization
+  - subtheme_id: T5.5
+    subtheme_name: Urban ecosystems and biodiversity
+    keywords:
+    - urban ecosystems
+    - biodiversity
+    - ecological systems
+    - ecological protection
+- theme_id: T6
+  theme_name: Cultural Heritage and Place-Based Development
+  subthemes:
+  - subtheme_id: T6.1
+    subtheme_name: Cultural heritage protection
+    keywords:
+    - cultural heritage
+    - heritage protection
+    - heritage conservation
+    - historic areas
+    - historic urban landscape
+  - subtheme_id: T6.2
+    subtheme_name: Natural heritage and landscapes
+    keywords:
+    - natural heritage
+    - cultural landscapes
+    - heritage landscapes
+    - natural landscapes
+  - subtheme_id: T6.3
+    subtheme_name: Heritage-sensitive urban development
+    keywords:
+    - heritage-sensitive development
+    - heritage sensitive development
+    - adaptive reuse
+    - conservation-led development
+    - conservation led development
+    - heritage-sensitive planning
+    - heritage sensitive planning
+  - subtheme_id: T6.4
+    subtheme_name: Indigenous and local knowledge systems
+    keywords:
+    - indigenous knowledge
+    - traditional knowledge
+    - local knowledge
+    - ancestral knowledge
+  - subtheme_id: T6.5
+    subtheme_name: Cultural identity and social cohesion
+    keywords:
+    - cultural identity
+    - cultural diversity
+    - social cohesion
+    - intercultural dialogue
+- theme_id: T7
+  theme_name: Local Institutional Capacity, Governance and Accountability
+  subthemes:
+  - subtheme_id: T7.1
+    subtheme_name: Empowered local authorities and urban management
+    keywords:
+    - empowered local authorities
+    - local authorities
+    - municipal authorities
+    - urban management
+    - local government capacity
+    - decentralization
+    - subsidiarity
+  - subtheme_id: T7.2
+    subtheme_name: Institutional capacity building
+    keywords:
+    - capacity building
+    - institutional capacity
+    - institutional strengthening
+    - technical capacity
+    - professional training
+  - subtheme_id: T7.3
+    subtheme_name: Fiscal and administrative capacity of local governments
+    keywords:
+    - municipal finance
+    - fiscal autonomy
+    - local revenue
+    - public financial management
+    - municipal budgeting
+  - subtheme_id: T7.4
+    subtheme_name: Metropolitan governance and inter-municipal coordination
+    keywords:
+    - metropolitan governance
+    - metropolitan authorities
+    - inter-municipal cooperation
+    - inter municipal cooperation
+    - city-region governance
+    - city region governance
+    - metropolitan planning
+  - subtheme_id: T7.5
+    subtheme_name: Urban data, monitoring and evidence-based policymaking
+    keywords:
+    - urban data
+    - data systems
+    - monitoring
+    - evaluation
+    - evidence-based policy
+    - evidence based policy
+    - indicators
+    - accountability
+  - subtheme_id: T7.6
+    subtheme_name: Knowledge exchange and institutional learning
+    keywords:
+    - knowledge sharing
+    - best practices
+    - peer learning
+    - institutional learning
+    - capacity exchange
+- theme_id: T8
+  theme_name: Financing, Investment and Resource Mobilization
+  subthemes:
+  - subtheme_id: T8.1
+    subtheme_name: Public investment
+    keywords:
+    - public investment
+    - infrastructure investment
+    - capital expenditure
+    - public funding
+  - subtheme_id: T8.2
+    subtheme_name: Innovative urban finance instruments
+    keywords:
+    - public private partnership
+    - public-private partnership
+    - PPP
+    - land value capture
+    - land-based finance
+    - land based finance
+    - blended finance
+  - subtheme_id: T8.3
+    subtheme_name: Pro-poor financing mechanisms
+    keywords:
+    - pro-poor financing
+    - pro poor financing
+    - inclusive finance
+    - affordable financing
+    - subsidies
+    - housing finance
+  - subtheme_id: T8.4
+    subtheme_name: International development support
+    keywords:
+    - international cooperation
+    - development assistance
+    - donor funding
+    - concessional finance
+  - subtheme_id: T8.5
+    subtheme_name: Strategic allocation of urban investment
+    keywords:
+    - investment prioritization
+    - capital investment planning
+    - investment criteria
+    - budget allocation
+    - spatial targeting of investment
